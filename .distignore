@@ -1,0 +1,17 @@
+# A set of files to ignore in WordPress.org distribution
+.distignore
+.editorconfig
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+composer.json
+composer.lock
+package.json
+package-lock.json
+phpunit.xml
+phpcs.xml
+README.md
+wp-cli.local.yml
+tests
+vendor
