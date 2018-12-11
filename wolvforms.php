@@ -12,3 +12,21 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+
+// Include the main WolvForms class.
+if ( ! class_exists( 'WolvForms' ) ) {
+	include_once dirname( __FILE__ ) . '/includes/class-wolvforms.php';
+}
+
+/**
+ * Main instance of WolvForms.
+ *
+ * Returns the main instance of WOLV to prevent the need to use globals.
+ *
+ * @return WolvForms
+ */
+function wolv() {
+	return WolvForms::instance();
+}
+
+wolv();
